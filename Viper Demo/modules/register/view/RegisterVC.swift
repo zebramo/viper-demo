@@ -44,7 +44,7 @@ class RegisterVC:BaseVC{
         view.endEditing(true)
     }
     @IBAction func clickSubmit(_ sender: UIButton) {
-        presenter!.clickSubmit(name: self.tfName.text!,
+        presenter!.clickRegister(name: self.tfName.text!,
                                lastName: self.tfLastName.text!,
                                mail: self.tfMail.text!,
                                password: self.tfPassword.text!)

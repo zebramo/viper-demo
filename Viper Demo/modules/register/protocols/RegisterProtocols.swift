@@ -13,7 +13,7 @@ protocol RegisterViewToPresenterProtocol:class{
     var interactor : RegisterPresenterToInteractorProtocol?{get set}
     var router : RegisterPresenterToRouterProtocol?{get set}
     // viewToPresenter methods
-    func clickSubmit(name:String,lastName:String,mail:String,password:String)
+    func clickRegister(name:String,lastName:String,mail:String,password:String)
 }
 
 protocol RegisterInteractorToPresenterProtocol:class{

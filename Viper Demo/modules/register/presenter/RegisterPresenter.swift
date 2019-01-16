@@ -18,7 +18,7 @@ class RegisterPresenter:RegisterViewToPresenterProtocol{
     var router : RegisterPresenterToRouterProtocol?
     
   
-    func clickSubmit(name:String,lastName:String,mail:String,password:String){
+    func clickRegister(name:String,lastName:String,mail:String,password:String){
         if name.isEmpty || lastName.isEmpty || mail.isEmpty || password.isEmpty{
             view?.showWarningMessage(title: "Warning", message: "Please fill all fields.")
         }else {
